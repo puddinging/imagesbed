@@ -4,4 +4,4 @@ services:
     image: imagesbed:v1.0.0
     container_name: imagesbed
     ports:
-      - 8080:8888
+      - 8888:8080
