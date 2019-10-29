@@ -1,7 +1,7 @@
 FROM openjdk:8-jre
 MAINTAINER jiefengfire@163.com
 
-ENV APP_VERSION 1.0.0-SNAPSHOT
+ENV APP_VERSION 0.0.1-SNAPSHOT
 
 RUN mkdir /app
 
