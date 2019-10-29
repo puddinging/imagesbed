@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   imagesbed:
-    image: imagesbed
+    image: imagesbed:v1.0.0
     container_name: imagesbed
     ports:
       - 8080:8080
