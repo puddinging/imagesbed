@@ -1,3 +1,11 @@
+/*
+ * @Copyright: Shanghai Definesys Company.All rights reserved.
+ * @Descripttion: 
+ * @Author: jiefeng
+ * @Date: 2019-10-28 16:39:24
+ * @LastEditors: jiefeng
+ * @LastEditTime: 2019-11-05 14:37:48
+ */
 package com.jiefeng.imagesbed.service;
 
 import com.definesys.mpaas.common.exception.MpaasBusinessException;
@@ -13,9 +21,7 @@ public class ImageService {
 //    接收文件持久化,返回文件路径名
     public String uploadImage(MultipartFile file) {
 
-        String fullFileName = "";
-
-        if (!file.isEmpty()){
+        if (!file.isEmpty()) {
             String fileName = file.getOriginalFilename();
             try {
                 String fileUrl = FileUploadAndDownloadUtil.uploadPicture(file,fileName);
@@ -30,8 +36,6 @@ public class ImageService {
 
     public String mdmage(MultipartFile file) {
         String fileName = uploadImage(file);
-        String mdFileName = "![](http://101.132.149.94:50001/"+fileName+")";
-        return mdFileName;
-        // TODO: 2019/11/5  
+        return "![](http://101.132.149.94:50001/"+fileName+")";
     }
 }

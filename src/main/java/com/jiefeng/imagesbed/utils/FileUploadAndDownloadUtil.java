@@ -4,7 +4,7 @@
  * @Author: jiefeng
  * @Date: 2019-10-28 16:44:40
  * @LastEditors: jiefeng
- * @LastEditTime: 2019-11-05 14:23:52
+ * @LastEditTime: 2019-11-05 14:38:58
  */
 package com.jiefeng.imagesbed.utils;
 
@@ -19,6 +19,7 @@ public class FileUploadAndDownloadUtil {
     /**
      * 图片上传
      * @throws IOException
+     * 原本想使用values注解从配置文件加载，但是这是一个静态方法所以无法使用
      */
     public static String uploadPicture(MultipartFile file, String fileName)
             throws IOException{
