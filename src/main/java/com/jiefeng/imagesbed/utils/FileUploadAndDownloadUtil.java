@@ -1,6 +1,13 @@
+/*
+ * @Copyright: Shanghai Definesys Company.All rights reserved.
+ * @Descripttion: 
+ * @Author: jiefeng
+ * @Date: 2019-10-28 16:44:40
+ * @LastEditors: jiefeng
+ * @LastEditTime: 2019-11-05 14:23:52
+ */
 package com.jiefeng.imagesbed.utils;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -15,7 +22,7 @@ public class FileUploadAndDownloadUtil {
      */
     public static String uploadPicture(MultipartFile file, String fileName)
             throws IOException{
-        String filePath = "/usr/local/images/";
+        String filePath = "I:\\test2\\";
         return uploadPicture(file,filePath,fileName);
     }
 

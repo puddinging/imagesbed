@@ -32,5 +32,6 @@ public class ImageService {
         String fileName = uploadImage(file);
         String mdFileName = "![](http://101.132.149.94:50001/"+fileName+")";
         return mdFileName;
+        // TODO: 2019/11/5  
     }
 }
