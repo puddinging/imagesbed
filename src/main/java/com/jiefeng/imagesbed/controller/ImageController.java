@@ -4,7 +4,7 @@
  * @Author: jiefeng
  * @Date: 2019-10-28 16:34:12
  * @LastEditors: jiefeng
- * @LastEditTime: 2019-11-05 15:41:22
+ * @LastEditTime: 2019-11-06 12:02:56
  */
 package com.jiefeng.imagesbed.controller;
 
@@ -31,8 +31,6 @@ public class ImageController {
     @Autowired
     private ImageService imageService;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
     // 返回存储的图片名字
     @RequestMapping(value = "uploadImage")
