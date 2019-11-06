@@ -14,3 +14,4 @@ spring:
       max-request-size: 100MB
       resolve-lazily: true
 
+
