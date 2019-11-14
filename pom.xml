@@ -83,6 +83,13 @@
             <version>1.0.0</version>
         </dependency>
 
+        <!--文档插件-->
+        <dependency>
+            <groupId>com.definesys.mpaas</groupId>
+            <artifactId>sword-swagger-plugin</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
