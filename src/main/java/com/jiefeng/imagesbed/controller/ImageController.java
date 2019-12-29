@@ -12,7 +12,6 @@ import java.util.List;
 
 import com.definesys.mpaas.common.http.Response;
 import com.definesys.mpaas.query.MpaasQueryFactory;
-import com.jiefeng.imagesbed.pojo.User;
 import com.jiefeng.imagesbed.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
