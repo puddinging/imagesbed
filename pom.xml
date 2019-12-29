@@ -23,16 +23,35 @@
 
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
 
-<!--        &lt;!&ndash; AOP支持 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-aop</artifactId>-->
-<!--        </dependency>-->
+        <!-- AOP支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        
+        <!--thymeleaf对security5的支持依赖-->
+         <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity5</artifactId>
+            <version>3.0.4.RELEASE</version>
+         </dependency>
+        
+
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -65,11 +84,11 @@
         </dependency>
 
         <!--文档插件-->
-<!--        <dependency>-->
-<!--            <groupId>com.definesys.mpaas</groupId>-->
-<!--            <artifactId>sword-swagger-plugin</artifactId>-->
-<!--            <version>1.0.1</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.definesys.mpaas</groupId>
+            <artifactId>sword-swagger-plugin</artifactId>
+            <version>1.0.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -84,13 +103,13 @@
         </dependency>
     </dependencies>
 
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
