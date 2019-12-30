@@ -23,7 +23,7 @@ public class FileUploadAndDownloadUtil {
      */
     public static String uploadPicture(MultipartFile file, String fileName)
             throws IOException{
-        String filePath = "I:\\test2\\";
+        String filePath = "/usr/local/images/";
         return uploadPicture(file,filePath,fileName);
     }
 

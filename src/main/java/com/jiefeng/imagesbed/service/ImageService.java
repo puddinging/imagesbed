@@ -25,7 +25,7 @@ public class ImageService {
             String fileName = file.getOriginalFilename();
             try {
                 String fileUrl = FileUploadAndDownloadUtil.uploadPicture(file,fileName);
-                return "fileUrl";
+                return fileUrl;
             } catch (IOException e) {
                 throw new MpaasBusinessException("图片上传失败，请检查"+e.getMessage());
             }
